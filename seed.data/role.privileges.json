@@ -1,0 +1,89 @@
+[
+    {
+        "Role": "Admin",
+        "Privileges": [
+            "User.Create",
+            "User.GetById",
+            "User.Search",
+            "User.Update",
+            "User.Delete",
+            "User.LoginWithPassword",
+            "User.ResetPassword",
+            "User.LoginWithOtp",
+            "User.SendOtp",
+            "User.Logout",
+
+            "FileResource.Upload",
+            "FileResource.GetById",
+            "FileResource.Search",
+            "FileResource.Download",
+
+            "ApiClient.Create",
+            "ApiClient.Search",
+            "ApiClient.GetById",
+            "ApiClient.Update",
+            "ApiClient.Delete",
+            "ApiClient.GetApiKey",
+            "ApiClient.RenewApiKey",
+
+            "Business.Create",
+            "Business.Search",
+            "Business.GetById",
+            "Business.Update",
+            "Business.Delete",
+
+            "BusinessNode.Create",
+            "BusinessNode.Search",
+            "BusinessNode.GetById",
+            "BusinessNode.Update",
+            "BusinessNode.Delete",
+
+            "BusinessUser.Create",
+            "BusinessUser.Search",
+            "BusinessUser.GetById",
+            "BusinessUser.Update",
+            "BusinessUser.Delete",
+
+            "BusinessService.Create",
+            "BusinessService.Search",
+            "BusinessService.GetById",
+            "BusinessService.Update",
+            "BusinessService.Delete",
+
+            "BusinessUserService.Create",
+            "BusinessUserService.Search",
+            "BusinessUserService.GetById",
+            "BusinessUserService.Update",
+            "BusinessUserService.Delete",
+
+            "Customer.Create",
+            "Customer.Search",
+            "Customer.GetById",
+            "Customer.Update",
+            "Customer.Delete"
+
+            
+
+        ]
+    },
+    {
+        "Role": "User",
+        "Privileges": [
+            "User.Create",
+            "User.GetById",
+            "User.Search",
+            "User.Update",
+            "User.Delete",
+            "User.LoginWithPassword",
+            "User.ResetPassword",
+            "User.LoginWithOtp",
+            "User.SendOtp",
+            "User.Logout",
+
+            "FileResource.Upload",
+            "FileResource.GetById",
+            "FileResource.Search",
+            "FileResource.Download"
+        ]
+    }
+ ]
