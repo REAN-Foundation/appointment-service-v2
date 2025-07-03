@@ -1,12 +1,12 @@
-FROM node:18.18-alpine3.18 AS builder
+FROM node:18.20.8-alpine3.21 AS builder
 ADD . /app
 RUN apk add bash
 RUN apk add --no-cache \
         python3 \
         py3-pip \
-    && pip3 install --upgrade pip \
-    && pip3 install \
-        awscli \
+    # && pip3 install --upgrade pip \
+    # && pip3 install \
+    #     awscli \
     && rm -rf /var/cache/apk/*
 RUN apk add --update alpine-sdk
 RUN apk add chromium \
@@ -22,14 +22,12 @@ RUN npm run build
 
 ##
 
-FROM node:18.18-alpine3.18
+FROM node:18.20.8-alpine3.21
 RUN apk add bash
 RUN apk add --no-cache \
         python3 \
         py3-pip \
-    && pip3 install --upgrade pip \
-    && pip3 install \
-        awscli \
+    && pip3 install --break-system-packages awscli \
     && rm -rf /var/cache/apk/*
 RUN apk add --update alpine-sdk
 RUN apk add chromium \
