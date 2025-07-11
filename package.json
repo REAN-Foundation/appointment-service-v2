@@ -54,7 +54,7 @@
     "protoc-gen-grpc": "^2.0.4",
     "readdirp": "^3.6.0",
     "reflect-metadata": "^0.1.13",
-    "sequelize": "^6.15.0",
+    "sequelize": "^6.37.7",
     "sharp": "^0.32.6",
     "sleep": "^6.3.0",
     "timezone-support": "^2.0.2",
